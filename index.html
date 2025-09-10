@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>한국 인기 유튜브 TOP10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>🇰🇷 한국 유튜브 인기 영상 TOP10</h1>
+      <button id="refreshBtn" aria-label="새로고침">새로 불러오기</button>
+    </header>
+
+    <div id="loading" class="notice">🔄 영상을 불러오는 중…</div>
+    <div id="error" class="notice error" style="display:none;"></div>
+
+    <section id="videos" aria-live="polite"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
